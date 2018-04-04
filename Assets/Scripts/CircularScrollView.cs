@@ -129,9 +129,9 @@ public class CircularScrollView : MonoBehaviour, IBeginDragHandler, IDragHandler
         }
         else
         {
-          //upPostion = new Vector3(uperBoundPos.x, uperBoundPos.y);
-          //downPostion = new Vector3(uperBoundPos.x, lowerBoundPos.y);
-          //centerPostion = new Vector3(uperBoundPos.x - arcHeight, 0);
+          upPostion = new Vector3(lowerBoundPos.x, uperBoundPos.y);
+          downPostion = new Vector3(uperBoundPos.x, uperBoundPos.y);
+          centerPostion = new Vector3(0, uperBoundPos.x - arcHeight);
         }
         break;
     }
